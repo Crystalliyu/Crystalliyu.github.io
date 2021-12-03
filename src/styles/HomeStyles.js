@@ -50,3 +50,8 @@ export const EmailBtn = styled(PrimaryBtn)`
   margin: 1rem 0 0 8rem;
   font-family: 'Poppins', sans-serif;
 `
+
+export const BtnRow = styled(Row)`
+  align-items: center;
+  color: white;
+`
