@@ -21,10 +21,12 @@ export const Header = styled(Row)`
   font-size: 20px;
   font-weight: inherit;
   margin: 2rem 0 0 8rem;
+  z-index: 10;
 `
 
 export const Tab = styled.p`
   margin-right: 2rem;
+  cursor: pointer;
 `
 
 export const LargeText = styled.p`

@@ -12,12 +12,13 @@ export const Column = styled.div`
 
 export const PageWrapper = styled(Row)`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 `
 
 export const Half = styled(Column)`
   width: 50%;
-  height: 100%;
+  height: 100vh;
 `
 
 export const PrimaryBtn = styled(Button)`
