@@ -20,4 +20,8 @@ export const SubStackMenu = styled(SubMenu)`
   .ant-menu-sub.ant-menu-inline {
     background-color: transparent !important;
   }
+  
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: transparent !important;
+  }
 `
