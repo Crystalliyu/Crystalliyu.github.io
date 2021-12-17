@@ -6,11 +6,13 @@ import Menu from "./Menu";
 import DownloadLoading from "../../data/react/DownloadLoading";
 import LoadImage from "../../data/react/LoadImage";
 import Catalogue from "./Catalogue";
+import HeaderBar from "../layout/HeaderBar";
 
-export default function TechRoad() {
+export default function TechBlog() {
     return (
         <Background>
             <Column width={'100%'} height={'100vh'} style={{overflowY:'scroll'}}>
+                <HeaderBar/>
                 <Row width={'100%'} height={'100%'}>
                     <Menu/>
                     <Paper>

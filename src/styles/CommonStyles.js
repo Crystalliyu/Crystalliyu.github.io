@@ -37,6 +37,8 @@ export const Paper = styled(Column)`
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+  box-shadow: 0 2.26066px 9.04265px rgba(209, 216, 226, 0.35);
+  border-radius: 4.52133px;
 `
 
 export const TitleRow = styled(Column)`

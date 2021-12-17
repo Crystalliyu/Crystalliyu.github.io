@@ -1,11 +1,13 @@
 import React from "react";
-import {Header, Tab} from "../../styles/HomeStyles";
-import { useNavigate } from "react-router-dom";
+import {Tab} from "../../styles/HomeStyles";
+import {useNavigate} from "react-router-dom";
+import {AdminHeader} from "../../styles/HeaderBarStyles";
 
-export const NavBar = () => {
+export default function HeadBar(props) {
     const navigate = useNavigate();
+
     return (
-        <Header>
+        <AdminHeader>
             <Tab onClick={() => navigate("/")}>Home</Tab>
             <Tab onClick={() => navigate("/about")}>About Me</Tab>
             <Tab onClick={() => navigate("/projects")}>Projects</Tab>
@@ -13,6 +15,6 @@ export const NavBar = () => {
             <Tab onClick={() => navigate("/publications")}>Publication</Tab>
             <Tab onClick={() => navigate("/personal")}>Personal</Tab>
             <Tab onClick={() => navigate("/tech-blog")}>Tech road</Tab>
-        </Header>
+        </AdminHeader>
     )
 }

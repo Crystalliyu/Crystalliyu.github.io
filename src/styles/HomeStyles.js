@@ -12,6 +12,9 @@ export const Left = styled(Half)`
 export const Right = styled(Half)`
   background-image: url(${homeBg});
   background-size: cover;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10rem;
 `
 
 export const Header = styled(Row)`
@@ -24,7 +27,7 @@ export const Header = styled(Row)`
   z-index: 10;
 `
 
-export const Tab = styled.p`
+export const Tab = styled.span`
   margin-right: 2rem;
   cursor: pointer;
 `
@@ -56,4 +59,12 @@ export const EmailBtn = styled(PrimaryBtn)`
 export const BtnRow = styled(Row)`
   align-items: center;
   color: white;
+`
+
+export const InfoRow = styled(Row)`
+  align-items: center;
+  width: 300px;
+  margin-left: 5rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
 `

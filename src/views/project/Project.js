@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ReactNotes(props) {
+export default function Project(props) {
     return (
         <div>
-            test the react area
+            this is project page
         </div>
     )
 }
