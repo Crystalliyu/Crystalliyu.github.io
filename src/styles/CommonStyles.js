@@ -20,6 +20,17 @@ export const PageWrapper = styled(Row)`
   height: auto;
 `
 
+export const PageBody = styled(Column)`
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+`
+
+export const Body = styled(Column)`
+  width: 100%;
+  padding: 2% 10%;
+`
+
 export const Half = styled(Column)`
   width: 50%;
   height: 100vh;
@@ -33,7 +44,6 @@ export const PrimaryBtn = styled(Button)`
 export const Paper = styled(Column)`
   background-color: white;
   padding: 3rem;
-  margin: 0 3rem;
   width: 100%;
   height: 100%;
   overflow-y: scroll;

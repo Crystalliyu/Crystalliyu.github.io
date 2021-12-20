@@ -11,9 +11,7 @@ export default function Menu() {
     return (
         <StackMenu
             onClick={handleClick}
-            style={{ width: 300, background:'white', boxSizing: 'border-box',
-                boxShadow: '0px 4px 4px rgba(226, 229, 234, 0.35)',
-            }}
+            style={{ width: 200, background:'white'}}
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
             mode="inline"
