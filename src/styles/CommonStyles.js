@@ -50,12 +50,3 @@ export const Paper = styled(Column)`
   box-shadow: 0 2.26066px 9.04265px rgba(209, 216, 226, 0.35);
   border-radius: 4.52133px;
 `
-
-export const TitleRow = styled(Column)`
-  padding: 1rem;
-  border-bottom: solid 1px gray;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-  cursor: pointer;
-`
