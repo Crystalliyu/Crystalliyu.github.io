@@ -2,8 +2,7 @@ import { CopyBlock } from "react-code-blocks";
 import React from "react";
 
 export default function DownLoadLoading(props) {
-    const code = `
-    const fetchFile = async (url, domain, type) => {
+    const code = `const fetchFile = async (url, domain, type) => {
         domain === 'project' ? setProjectLoading(true) : setClassLoading(true);
         const response = await fetch(url);
         const reader = response.body.getReader();
@@ -46,7 +45,27 @@ export default function DownLoadLoading(props) {
 
     return (
         <>
-            <h2>Loading when download</h2>
+            <h1 style={{fontSize:'45px'}}>Loading when downloading the file</h1>
+            <h3>How to download local file?</h3>
+            <CopyBlock
+                text={`<a href={"./cat.pdf"} download target="_blank">Download CV</a>`}
+                language={'jsx'}
+                showLineNumbers={true}
+                wrapLines
+                theme={'dracula'}
+            />
+            <hr/>
+            <h3>How to download file from url?</h3>
+            <h4>1. use Windows.open('url')</h4>
+            <CopyBlock
+                text={`window.location.href = API_URL + /api/export_classes_excel/id/`}
+                language={'jsx'}
+                showLineNumbers={true}
+                wrapLines
+                theme={'dracula'}
+            />
+            <hr/>
+            <h4>2. Create an anchor tag {`<a>`} using the createElement property and assign download and href attributes to it.</h4>
             <CopyBlock
                 text={code}
                 language={'jsx'}

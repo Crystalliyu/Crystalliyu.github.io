@@ -8,12 +8,13 @@ import LoadImage from "../../data/react/LoadImage";
 import Catalogue from "./Catalogue";
 import HeaderBar from "../layout/HeaderBar";
 import Scroll from "../../data/react/ScrollToElement";
+import {CalcCSS} from "../../data/react/CalcCSS";
 
 export default function TechBlog() {
     return (
         <Column width={'100%'} height={'100vh'} style={{overflowY:'scroll', backgroundColor:'white'}}>
             <HeaderBar/>
-            <Row width={'100%'} height={'100%'}>
+            <Row width={'100%'} height={'calc(100% - 5em)'}>
                 <Menu/>
                 <Paper>
                     <Routes>
@@ -21,6 +22,7 @@ export default function TechBlog() {
                         <Route path="/loading-while-download" element={<DownloadLoading/>} />
                         <Route path="/load-image" element={<LoadImage/>} />
                         <Route path="/scroll" element={<Scroll/>} />
+                        <Route path="/calc-css" element={<CalcCSS/>} />
                     </Routes>
                 </Paper>
             </Row>

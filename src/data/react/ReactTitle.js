@@ -17,4 +17,11 @@ export const ReactTitle = [
         date: 'December 18, 2021',
         description: 'When you use the hotkey to navigate, scroll the view to the selected element automatically'
     },
+    //style
+    {
+        title: 'Calculate height/width in CSS',
+        path: './calc-css',
+        date: 'December 21, 2021',
+        description: 'use calc() to calculate the height/width in css file'
+    }
 ]
