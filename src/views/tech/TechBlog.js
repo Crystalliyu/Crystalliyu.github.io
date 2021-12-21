@@ -11,7 +11,7 @@ import Scroll from "../../data/react/ScrollToElement";
 
 export default function TechBlog() {
     return (
-        <Column width={'100%'} height={'100vh'} style={{overflowY:'scroll', backgroundColor:'#fef8f3'}}>
+        <Column width={'100%'} height={'100vh'} style={{overflowY:'scroll', backgroundColor:'white'}}>
             <HeaderBar/>
             <Row width={'100%'} height={'100%'}>
                 <Menu/>

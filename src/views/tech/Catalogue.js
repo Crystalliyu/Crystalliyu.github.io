@@ -10,7 +10,7 @@ export default function Catalogue(props) {
         <>
             {ReactTitle.map((item) =>
                 <>
-                    <Card title={item.title} bordered={false} style={{ width: '100%' }} onClick={() => navigate(item.path)}>
+                    <Card title={<h2>{item.title}</h2>} bordered={false} style={{ width: '100%', cursor:'pointer' }} onClick={() => navigate(item.path)}>
                         <Row><span style={{fontWeight:'bold'}}>{item.date}</span><p>---{item.description}</p></Row>
                     </Card>
                 </>
