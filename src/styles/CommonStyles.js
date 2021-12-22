@@ -33,7 +33,7 @@ export const Body = styled(Column)`
   width: 100%;
   padding: 2% 10%;
   background-color: ${({theme}) => theme.background};
-  color: ${({theme}) => theme.font} !important;
+  color: ${({theme}) => theme.font};
 `
 
 export const Half = styled(Column)`

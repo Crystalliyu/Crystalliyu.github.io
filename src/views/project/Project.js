@@ -7,6 +7,8 @@ import JobHunterNearby from '../../assets/jobHunter-nearby.png';
 import JobHunterFavorite from '../../assets/jobHunter-favorites.png';
 import onlineShop from '../../assets/onlineShop.png';
 import {Route, Routes, useNavigate} from 'react-router-dom';
+import {ThemeProvider} from "styled-components";
+import {ThemeContext} from "../../styles/Theme";
 
 const JobHunterDetail = (
     <>
@@ -38,24 +40,30 @@ const JobHunterDetail = (
 export default function Project(props) {
     const navigate = useNavigate();
     return (
-        <PageBody>
-            <HeaderBar selectedKey={'project'}/>
-            <Body>
-                <Routes>
-                    <Route path={'/'} element={
-                        <>
-                            <h1><u style={{cursor:'pointer'}} onClick={() => navigate('./job-hunter')}>JobHunter - AWS based Job Recommendation System</u></h1>
-                            <h3>Job Hunter is a job recommendation system which based on AWS, provides company and position informations retrieved from GitHub API for users to search and apply jobs.</h3>
-                            <img src={JobHunter}/>
+        <ThemeContext.Consumer>
+            {({theme}) => (
+                <ThemeProvider theme={theme}>
+                    <PageBody>
+                        <HeaderBar selectedKey={'project'}/>
+                        <Body>
+                            <Routes>
+                                <Route path={'/'} element={
+                                    <>
+                                        <h1><u style={{cursor:'pointer'}} onClick={() => navigate('./job-hunter')}>JobHunter - AWS based Job Recommendation System</u></h1>
+                                        <h3>Job Hunter is a job recommendation system which based on AWS, provides company and position informations retrieved from GitHub API for users to search and apply jobs.</h3>
+                                        <img src={JobHunter}/>
 
-                            <h1><u style={{cursor:'pointer'}}>Spring and Hibernate based Shopping System</u></h1>
-                            <h3>This shopping system is a web application for users to shop and order items online.</h3>
-                            <img src={onlineShop}/>
-                        </>
-                    }/>
-                    <Route path={'/job-hunter'} element={JobHunterDetail}/>
-                </Routes>
-            </Body>
-        </PageBody>
+                                        <h1><u style={{cursor:'pointer'}}>Spring and Hibernate based Shopping System</u></h1>
+                                        <h3>This shopping system is a web application for users to shop and order items online.</h3>
+                                        <img src={onlineShop}/>
+                                    </>
+                                }/>
+                                <Route path={'/job-hunter'} element={JobHunterDetail}/>
+                            </Routes>
+                        </Body>
+                    </PageBody>
+                </ThemeProvider>
+                )}
+        </ThemeContext.Consumer>
     )
 }

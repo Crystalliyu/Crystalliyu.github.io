@@ -14,6 +14,7 @@ function App() {
 
     const toggleTheme = () => {
         setTheme(theme === themes.dark ? themes.light : themes.dark);
+        document.body.style.background = theme === themes.dark ? themes.light.background : themes.dark.background;
     }
 
   return (
