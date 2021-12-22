@@ -6,6 +6,7 @@ export const Row = styled.div`
   flex-direction: row;
   width: ${({width}) => width};
   height: ${({height}) => height};
+  align-items: ${({vp}) => vp ? vp : null};
 `
 export const Column = styled.div`
   display: flex;

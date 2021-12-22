@@ -1,16 +1,16 @@
 import {StackMenu, SubStackMenu} from "../../styles/TechStyles";
 import React from "react";
 
-export default function Menu() {
+export default function Menu(props) {
 
     const handleClick = e => {
-        console.log('click ', e);
+        props.onChange(e.key);
     };
 
     return (
         <StackMenu
             onClick={handleClick}
-            style={{ width: 200, background:'white'}}
+            style={{ width: 300, background:'white', paddingTop:'2rem'}}
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
             mode="inline"
@@ -23,8 +23,6 @@ export default function Menu() {
                 <StackMenu.ItemGroup key="g2" title="Language">
                     <StackMenu.Item key="3">JS</StackMenu.Item>
                     <StackMenu.Item key="4">TS</StackMenu.Item>
-                </StackMenu.ItemGroup>
-                <StackMenu.ItemGroup key="g3" title="Style">
                     <StackMenu.Item key="5">CSS</StackMenu.Item>
                     <StackMenu.Item key="6">HTML</StackMenu.Item>
                 </StackMenu.ItemGroup>
