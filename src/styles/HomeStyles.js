@@ -30,6 +30,7 @@ export const Header = styled(Row)`
 export const Tab = styled.span`
   margin-right: 2rem;
   cursor: pointer;
+  color: ${({isSelected}) => isSelected ? '#676CDB' : null};
 `
 
 export const LargeText = styled.p`

@@ -2,14 +2,14 @@ import styled from "styled-components";
 import {Header, Tab} from "./HomeStyles";
 
 export const AdminHeader = styled(Header)`
-  background-color: white;
+  background-color: ${({theme}) => theme.headerBg};
   margin: 0;
   align-items: center;
   padding-left: 2%;
-  color: black;
+  color: ${({theme}) => theme.font};
   font-weight: bold;
   box-sizing: border-box;
-  box-shadow: 0 4px 4px rgba(226, 229, 234, 0.35);
+  box-shadow: ${({theme}) => theme.headerShadow};
   justify-content: space-between;
 `
 

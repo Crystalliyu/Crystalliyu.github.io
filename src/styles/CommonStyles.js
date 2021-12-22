@@ -43,11 +43,11 @@ export const PrimaryBtn = styled(Button)`
 `
 
 export const Paper = styled(Column)`
-  background-color: white;
+  background-color: ${({theme}) => theme.background};
+  color: ${({theme}) => theme.font};
   padding: 3rem;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  box-shadow: 0 2.26066px 9.04265px rgba(209, 216, 226, 0.35);
   border-radius: 4.52133px;
 `

@@ -5,7 +5,7 @@ import {Body, PageBody} from "../../styles/CommonStyles";
 export default function About(props) {
     return (
         <PageBody>
-            <HeaderBar/>
+            <HeaderBar selectedKey={'about'}/>
             <Body>
                 <h1>About</h1>
                 <h3>Hi there! This is Yuqing Li’s home on the web!</h3>

@@ -1,23 +1,50 @@
-import {PageWrapper} from "./CommonStyles";
-import homeBg from "../assets/homeBg.png";
 import styled from "styled-components";
-import {Menu} from "antd";
+import {Card, Menu} from "antd";
 
 const { SubMenu } = Menu;
 
-export const Background = styled(PageWrapper)`
-  background-image: url(${homeBg});
-  background-size: cover;
-`
-
 export const StackMenu = styled(Menu)`
-  background-color: transparent;
+  background-color: ${({theme}) => theme.background};
+  color: ${({theme}) => theme.font};
+  transition: none;
+  border-color: ${({theme}) => theme.menuBorder};
+  box-shadow: none;
+  
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: ${({theme}) => theme.menuSelectedBg};
+    transition: none;
+  }
+  
+  .ant-menu-sub.ant-menu-inline .ant-menu-item-group-title {
+    color: ${({theme}) => theme.font};
+    transition: none;
+  }
+  
+  .ant-menu-sub.ant-menu-inline {
+    background-color: ${({theme}) => theme.background};
+    color: ${({theme}) => theme.font};
+    transition: none;
+  }
+  
+  .ant-menu-submenu-arrow {
+    color: ${({theme}) => theme.font};
+  }
 `
 
 export const SubStackMenu = styled(SubMenu)`
-  background-color: transparent !important;
+  background-color: ${({theme}) => theme.background};
+  color: ${({theme}) => theme.font};
+  transition: none;
+`
+
+export const BlogCard = styled(Card)`
+  width: 100%;
+  cursor: pointer;
+  background-color: ${({theme}) => theme.background};
+  color: ${({theme}) => theme.font};
   
-  .ant-menu-sub.ant-menu-inline {
-    background-color: transparent !important;
+  .ant-card-head {
+    border-color: ${({theme}) => theme.menuBorder};;
   }
+  
 `

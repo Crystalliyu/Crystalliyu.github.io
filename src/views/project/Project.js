@@ -39,7 +39,7 @@ export default function Project(props) {
     const navigate = useNavigate();
     return (
         <PageBody>
-            <HeaderBar/>
+            <HeaderBar selectedKey={'project'}/>
             <Body>
                 <Routes>
                     <Route path={'/'} element={

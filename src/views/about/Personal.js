@@ -8,7 +8,7 @@ import travel3 from '../../assets/travel_3.png';
 export default function Personal(props) {
     return (
         <PageBody>
-            <HeaderBar/>
+            <HeaderBar selectedKey={'personal'}/>
             <Body>
                 <h3>
                     I am a kind-hearted person and have a good view on life. I enjoy sharing things and talking to people. In my spare time, I have a wide range of hobbies to relax myself, like painting, K-pop dancing, light music, traveling and writing something on the social media.
