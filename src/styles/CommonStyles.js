@@ -25,11 +25,15 @@ export const PageBody = styled(Column)`
   width: 100vw;
   min-height: 100vh;
   height: auto;
+  background-color: ${({theme}) => theme.background};
+  color: ${({theme}) => theme.font};
 `
 
 export const Body = styled(Column)`
   width: 100%;
   padding: 2% 10%;
+  background-color: ${({theme}) => theme.background};
+  color: ${({theme}) => theme.font} !important;
 `
 
 export const Half = styled(Column)`
