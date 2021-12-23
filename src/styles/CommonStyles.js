@@ -31,9 +31,11 @@ export const PageBody = styled(Column)`
 
 export const Body = styled(Column)`
   width: 100%;
+  height: calc(100vh - 5rem);
   padding: 2% 10%;
   background-color: ${({theme}) => theme.background};
   color: ${({theme}) => theme.font};
+  overflow-y: scroll;
 `
 
 export const Half = styled(Column)`
