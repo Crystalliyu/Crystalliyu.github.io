@@ -8,7 +8,7 @@ import {Row} from "../../styles/CommonStyles";
 import { Switch } from 'antd';
 import {ReactComponent as Moon} from '../../assets/moon.svg';
 import {ReactComponent as Sun} from '../../assets/sun.svg';
-import {ThemeContext} from '../../styles/Theme';
+import {ThemeContext, themes} from '../../styles/Theme';
 import {ThemeProvider} from "styled-components";
 
 export default function HeadBar(props) {
@@ -33,6 +33,7 @@ export default function HeadBar(props) {
                                 checkedChildren={<Moon />}
                                 unCheckedChildren={<Sun />}
                                 style={{marginRight:'1rem'}}
+                                checked={theme === themes.dark}
                                 onChange={toggleTheme}
                             />
                         </Row>
