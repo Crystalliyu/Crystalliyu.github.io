@@ -8,6 +8,7 @@ export const themes = {
         menuBorder: '#f0f0f0',
         headerShadow: '0 4px 4px rgba(226, 229, 234, 0.35)',
         cardTitle: '#1C1E21',
+        imgBg: '#f5f5f5',
     },
     dark: {
         font: '#ffffff',
@@ -17,6 +18,7 @@ export const themes = {
         menuBorder: '#3a3e43',
         headerShadow: 'none',
         cardTitle: '#ffffff',
+        imgBg: '#313131',
     },
 };
 
