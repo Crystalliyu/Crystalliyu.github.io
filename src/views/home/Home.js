@@ -13,7 +13,7 @@ export default function Home(props) {
             <Left>
                 <NavBar/>
                 <LargeText>Hi there!<br/>This is Yuqing Li’s home on the web!</LargeText>
-                <Description>I’am a <span style={{color:'white'}}>software engineer</span> based in Princeton who loves designing and implementing software applications.</Description>
+                <Description>I’am a <span style={{color:'white'}}>software engineer</span> based in Princeton who loves designing and implementing software solutions.</Description>
                 <BtnRow>
                     <EmailBtn type="primary" icon={<MailOutlined />} onClick={() => window.open('mailto:yl5644@nyu.edu')}>Email me</EmailBtn>
                     <DownloadOutlined style={{fontSize:'20px', margin:'0 5px 0 20px', cursor:'pointer'}}/>
