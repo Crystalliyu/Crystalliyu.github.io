@@ -10,7 +10,7 @@ export const NavBar = () => {
             <Tab onClick={() => navigate("/about")}>About Me</Tab>
             <Tab onClick={() => navigate("/projects")}>Projects</Tab>
             <Tab onClick={() => navigate("/personal")}>Personal</Tab>
-            <Tab onClick={() => navigate("/tech-blog")}>Blog</Tab>
+            {/*<Tab onClick={() => navigate("/tech-blog")}>Blog</Tab>*/}
         </Header>
     )
 }

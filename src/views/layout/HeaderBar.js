@@ -28,7 +28,7 @@ export default function HeadBar(props) {
                             <Tab isSelected={props.selectedKey === 'about'} onClick={() => navigate("/about")}>About Me</Tab>
                             <Tab isSelected={props.selectedKey === 'project'} onClick={() => navigate("/projects")}>Projects</Tab>
                             <Tab isSelected={props.selectedKey === 'personal'} onClick={() => navigate("/personal")}>Personal</Tab>
-                            <Tab isSelected={props.selectedKey === 'blog'} onClick={() => navigate("/tech-blog")}>Blog</Tab>
+                            {/*<Tab isSelected={props.selectedKey === 'blog'} onClick={() => navigate("/tech-blog")}>Blog</Tab>*/}
                             <Switch
                                 checkedChildren={<Moon />}
                                 unCheckedChildren={<Sun />}
