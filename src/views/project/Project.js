@@ -6,7 +6,7 @@ import onlineShop from '../../assets/onlineShop.png';
 import unicorn from '../../assets/unicorn.png';
 import use_case_gallery from '../../assets/use_case_gallery.png';
 import singuIMG from '../../assets/singuIMG.png';
-import MTR from '../../assets/MTR.png';
+import MTR from '../../assets/mtr_dashboard.png';
 import {Route, Routes, useNavigate} from 'react-router-dom';
 import {ThemeProvider} from "styled-components";
 import {ThemeContext} from "../../styles/Theme";
